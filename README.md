@@ -1,7 +1,8 @@
 # Helper for your React Element :star2::star2:
 
 * [NPM](https://www.npmjs.com/package/element-helpers) here
-* [GitHub](hhttps://github.com/thoriqdharmawan/element-helpers) here
+* [GitHub](https://github.com/thoriqdharmawan/element-helpers) here
+* [Live Code](https://github.com/thoriqdharmawan/element-helpers/blob/main/src/App.js) here
 
 ### Installation
 
