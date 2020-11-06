@@ -1,12 +1,10 @@
-// import {useGetDimensions} from './Hooks'
-
 import { useGetDimensions } from "element-helpers";
 
 function App() {
   const [refNode, { height, width }] = useGetDimensions();
 
-  console.log("height : ", height);
-  console.log("width : ", width);
+  console.log("height : ", height); // 100
+  console.log("width : ", width); // 300
 
   return (
     <div
