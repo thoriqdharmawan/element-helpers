@@ -1,18 +1,23 @@
 import {useDraggableElement} from './Hooks'
 import './index.css'
+import logo from './asset/logo512.png';
 
 function App() {
   // const [refNode, { height, width }] = useGetDimensions();
 
   const [refNode] = useDraggableElement()
+  const [refNode2] = useDraggableElement()
 
   return (
-    <div style={{
-      width: 400,
-      height: 400,
-      border: '1px solid black',
-    }} >  
-  
+    <div>
+      <img 
+        ref={refNode2}  
+        src={logo} 
+        style={{
+          position: "absolute",
+          cursor: "grab",
+        }} 
+      />
       <div 
         ref={refNode} 
         className="dumy xs"
@@ -24,10 +29,6 @@ function App() {
           cursor: "grab",
         }}
       />
-      
-      <div className="dumy xm"></div>
-      <div className="dumy md"></div>
-      <div className="dumy lg"></div>
     </div>
   );
 }
