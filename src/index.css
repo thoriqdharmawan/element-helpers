@@ -1,5 +1,6 @@
 .box {
   height: 200px;
-  width: 100px;
+  width: 200px;
+  cursor: 'grab';
   background-color: red; 
 }
