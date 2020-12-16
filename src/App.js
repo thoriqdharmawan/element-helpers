@@ -1,16 +1,11 @@
-import { useGetDimensions } from "element-helpers";
+import {useDraggableElement} from './Hooks'
+import './index.css'
 
 function App() {
-  const [refNode, { height, width }] = useGetDimensions();
-
-  console.log("height : ", height); // 100
-  console.log("width : ", width); // 300
+  const refNode = useDraggableElement()
 
   return (
-    <div
-      ref={refNode}
-      style={{ width: 300, height: 100, backgroundColor: "red" }}
-    />
+    <div ref={refNode} className="box" />
   );
 }
 
